@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     chatButton.style.boxShadow = "0px 4px 6px rgba(0,0,0,0.2)";
     document.body.appendChild(chatButton);
 
-    // Crear el contenedor del chat
+    // Crear el contenedor del chat sin usar 'eval'
     let chatContainer = document.createElement("iframe");
     chatContainer.src = "https://n8n.innovaevolution.com/webhook/82cc0d6c-25b6-4792-ab04-e3163d0cabe2/chat";
     chatContainer.style.position = "fixed";
@@ -30,8 +30,15 @@ document.addEventListener("DOMContentLoaded", function () {
     chatContainer.style.display = "none";
     document.body.appendChild(chatContainer);
 
-    // Mostrar/ocultar el chat al hacer clic en el botón
+    // Mostrar/ocultar el chat sin usar 'eval'
     chatButton.addEventListener("click", function () {
-        chatContainer.style.display = chatContainer.style.display === "none" ? "block" : "none";
+        if (chatContainer.style.display === "none") {
+            chatContainer.style.display = "block";
+        } else {
+            chatContainer.style.display = "none";
+        }
+    });
+});
+=== "none" ? "block" : "none";
     });
 });
