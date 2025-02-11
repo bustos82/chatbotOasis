@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+</head>
+<body>
+    <script>
+        window.ChatWidgetConfig = {
+            webhook: {
+                url: 'https://n8n.innovaevolution.com/webhook/82cc0d6c-25b6-4792-ab04-e3163d0cabe2/chat',  // Tu webhook de n8n
+                route: 'general'
+            },
+            branding: {
+                logo: 'https://tu-logo-url.com/logo.png',  // Reemplázalo con tu logo si lo tienes
+                name: 'nocodeveloper',
+                welcomeText: 'Hola, ¿cómo puedo ayudarte?',
+                responseTimeText: 'Respondemos rápidamente'
+            },
+            style: {
+                primaryColor: '#854fff',
+                secondaryColor: '#6b3fd4',
+                position: 'right',
+                backgroundColor: '#ffffff',
+                fontColor: '#333333'
+            }
+        };
+    </script>
+    <script src="https://nocodeveloper.com/chat.js"></script>  <!-- Aquí no se cambia nada, ya que es el script que carga el chat -->
+</body>
+</html>
