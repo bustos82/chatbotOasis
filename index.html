@@ -6,14 +6,15 @@
     <title>Chatbot</title>
 </head>
 <body>
+    <!-- Widget Configuration -->
     <script>
         window.ChatWidgetConfig = {
             webhook: {
-                url: 'https://n8n.innovaevolution.com/webhook/82cc0d6c-25b6-4792-ab04-e3163d0cabe2/chat',  // Tu webhook de n8n
+                url: 'https://n8n.innovaevolution.com/webhook/82cc0d6c-25b6-4792-ab04-e3163d0cabe2/chat',
                 route: 'general'
             },
             branding: {
-                logo: 'https://tu-logo-url.com/logo.png',  // Reemplázalo con tu logo si lo tienes
+                logo: 'https://tu-logo-url.com/logo.png',
                 name: 'nocodeveloper',
                 welcomeText: 'Hola, ¿cómo puedo ayudarte?',
                 responseTimeText: 'Respondemos rápidamente'
@@ -27,7 +28,9 @@
             }
         };
     </script>
+
+    <!-- Cargar el script del chatbot -->
     <script src="https://bustos82.github.io/chatbotOasis/chat.js"></script>
-  <!-- Aquí no se cambia nada, ya que es el script que carga el chat -->
 </body>
 </html>
+
